@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { montserrat } from '@/app/components/fonts'
 import "./globals.css";
 import Header from "./components/header";
+import Navbar from "./components/nav-bar";
 
 
 export const metadata: Metadata = {
@@ -16,9 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-main text-text ${montserrat.className}`}>
+      <body className={`bg-main text-text h-full text-base  ${montserrat.className}`}>
         <Header/>
-        {children}
+        <main className="h-96 flex justify-center items-center gap-36">
+          <div className="w-3/6">
+            {children}
+          </div>
+          <Navbar/>
+        </main>
       </body>
     </html>
   );

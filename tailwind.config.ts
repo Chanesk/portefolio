@@ -11,7 +11,7 @@ const config: Config = {
       transparent: 'transparent',
       current: 'currentColors',
       'main':'#171719',
-      'secondary':'F8F560',
+      'secondary':'#F8F560',
       'green':'#00FFA7',
       'grey':'#777777',
       'text':'#D1D1D1'
@@ -21,6 +21,12 @@ const config: Config = {
         '5vw':'5vw',
       }
     },
+    fontSize:{
+      sm:'0.8rem',
+      base:'1rem',
+      xl:'1.563rem',
+      '2xl':'2.7rem',
+    }
   },
   plugins: [],
 };
