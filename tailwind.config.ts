@@ -14,7 +14,8 @@ const config: Config = {
       'secondary':'#F8F560',
       'green':'#00FFA7',
       'grey':'#777777',
-      'text':'#D1D1D1'
+      'text':'#D1D1D1',
+      'white':'#ffffff'
     },
     extend: {
       padding:{
@@ -26,6 +27,12 @@ const config: Config = {
       base:'1rem',
       xl:'1.563rem',
       '2xl':'2.7rem',
+    },
+    keyframes:{
+      slide:{
+        '0%':{transform :'translateX(-300px)'},
+        '100%': {transform: 'translateX(0)'}
+      }
     }
   },
   plugins: [],

@@ -19,8 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-main text-text h-full text-base  ${montserrat.className}`}>
         <Header/>
-        <main className="h-96 flex justify-center items-center gap-36">
-          <div className="w-3/6">
+        <main className="h-96 flex lg:justify-center items-center gap-36 px-5vw md:gap-20">
+          <div className="lg:w-3/6 w-4/6">
             {children}
           </div>
           <Navbar/>
