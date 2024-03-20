@@ -1,113 +1,71 @@
 import Image from "next/image";
+import { ubuntu } from "@/app/components/fonts";
+import style from "@/app/styles/page.module.css";
+import { IoPlayOutline } from "react-icons/io5";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <section className={` lg:mt-0 md:mt-4 mt-16 ${style.slide}`}>
+          <div>
+            <h1 className={`md:text-2xl text-xl mt-4 md:mt-0 mb-2 md:w-full w-3/6 ${ubuntu.className} ${style.titleSm}`}>Welcome.</h1>
+            <p>Hello, my name is <span className="font-bold">Agnes KABANGA</span>, i am a front-end developer based in Nairobi and Kinshasa. I specialize in working on various types of projects, including brochure websites and blogs.</p>
+            <p className="pt-4">{"I have a passion for problem-solving, creating pixel-perfect designs, beautiful interface and implementing intuitive user experiences."}</p>
+            <div className="md:flex mt-6 justify-center items-center">
+              <div className="flex md:relative md:left-10">
+              <Image src="/profil.jpg" alt="" width={160} height={100} className={`rounded-md ${style.filterimg}`}/>
+              <div className={`border-green border-2 h-40 w-40 rounded-md relative -z-10 hidden md:block ${style.cadre}`}></div>
+              </div>
+              <div className="flex lg:flex-row flex-col lg:gap-12 gap-1 md:relative md:right-10 md:mt-0 my-8">
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2"><IoPlayOutline className="text-green" /><span className="text-sm">JavaScript (ES6+)</span></div>
+                  <div className="flex items-center gap-2"><IoPlayOutline className="text-green"/><span className="text-sm">React</span></div>
+                  <div className="flex items-center gap-2"><IoPlayOutline className="text-green"/><span className="text-sm">Node.js</span></div>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2"><IoPlayOutline className="text-green"/><span className="text-sm">TypeScript</span></div>
+                  <div className="flex items-center gap-2"><IoPlayOutline className="text-green"/><span className="text-sm">NextJS</span></div>
+                  <div className="flex items-center gap-2"><IoPlayOutline className="text-green"/><span className="text-sm">Angular</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="md:hidden mt-10">
+            <h2 className={` text-xl w-2/6 ${ubuntu.className} ${style.titleSm}`}>Projects</h2>
+            <div className="bg-green/5 p-4 rounded-md mt-4">
+                <h1 className={`md:text-2xl text-base mb-2 text-white ${ubuntu.className} `}>Socodis-Equipment.</h1>
+                <p  className="pb-2">{"I developed the Socodis Equipment showcase site, a platform that highlights the company's activities. The stack is NextTS. The reporisitory for this one is private for at the moment."}</p>
+                <div className="flex gap-8 font-bold mt-2">
+                    <Link href="https://www.socodis-equipment.com" target="_blank" className={`w-16  ${style.link} ${style.bordergradient}`}>View site</Link>
+                    <Link href="https://www.figma.com/proto/1lBx1oioJKXCmrpHb85NbN/socodis?type=design&node-id=16-23&t=UiJtTGEg2iikVMOI-0&scaling=min-zoom&page-id=16%3A22&starting-point-node-id=16%3A67" target="_blank" className={`w-26  ${style.link} ${style.bordergradient}`}>View mockup</Link>
+                </div>
+            </div>
+           <div className="bg-green/5 p-4 rounded-md mt-4 ">
+            <h1 className={` mb-2 text-base text-white ${ubuntu.className}`}>Koridek.</h1>
+            <p className="pb-2">I have developed the website mockup for KORIDEK, which showcases the company and its activities. I made sure that the interface is both beautiful and intuitive. I used Figma as the tool to create this mockup.</p>
+            <Link href="https://www.figma.com/proto/z2adsTWoqKQoShAaVLrlDb/Untitled?type=design&node-id=9-31&t=UiJtTGEg2iikVMOI-0&scaling=min-zoom&page-id=9%3A30&starting-point-node-id=16%3A25" target="_blank" className={`w-24 font-bold  ${style.link} ${style.bordergradient}`}>View mockup</Link>
+           </div>
+            <div className="bg-green/5 p-4 rounded-md mt-4" >
+                <h1 className={`text-base mb-2 text-white ${ubuntu.className}`}>Raconte.</h1>
+                <p>{"I have developed a website called Raconte, which is a blog platform that allows users to read stories. I started by creating a mockup using Figma to ensure a visually appealing design. The stack is expressJS API, MongoDB and Angular."}</p>
+                <div className="flex flex-wrap gap-x-4 gap-y-2 font-bold mt-4">
+                    <Link href="https://raconte-chanesk.vercel.app/" target="_blank" className={`w-16  ${style.link} ${style.bordergradient}`}>View site</Link>
+                    <Link href="https://github.com/Chanesk/raconte_blog" target="_blank" className={`w-26  ${style.link} ${style.bordergradient}`}>View Github</Link>
+                    <Link href="https://www.figma.com/proto/7KY2oU6ZNub8aiQcJ2IIpY/blog-angular?type=design&node-id=9-21&t=UiJtTGEg2iikVMOI-0&scaling=min-zoom&page-id=9%3A20"  target="_blank" className={`w-26  ${style.link} ${style.bordergradient}`}>View mockup</Link>
+                </div>
+            </div>
+            <div className="bg-green/5 p-4 rounded-md mt-4">
+                <h1 className={`text-base mb-2 text-white ${ubuntu.className}`}>La Gonaïve.</h1>
+                <p className="pb-2">{"I developed the Gonaïve showcase site, a platform that highlights the company's activities. The stack is Strapi API and NextJS. The reporisitory for this one is private for at the moment."}</p>
+                <Link href="https://www.lagonaive.com" target="_blank" className={`w-16 font-bold ${style.link} ${style.bordergradient}`}>View site</Link>
+            </div>
+            <div className="bg-green/5 p-4 rounded-md mt-4 mb-10">
+                <h1 className={`text-base mb-2 text-white ${ubuntu.className}`}>Maza.</h1>
+                <p className="pb-2">{"I have developed the website mockup for MAZA, which showcases the company and its activities. I made sure that the interface is both beautiful and intuitive. I used Figma as the tool to create this mockup."}</p>
+                <Link href="https://www.figma.com/proto/9hJnunrQbhdUXILB59C1m2/Maza?type=design&node-id=17-11&t=UiJtTGEg2iikVMOI-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=17%3A26" target="_blank" className={`w-24 font-bold ${style.link} ${style.bordergradient}`}>View mockup</Link>
+            </div>
+          </div>
+        </section>
+        
   );
 }

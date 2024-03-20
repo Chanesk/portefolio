@@ -1,0 +1,63 @@
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.link{
+    background: none;
+    text-decoration: inherit;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.bordergradient{
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(270deg, #00FFA7 -0.01%, #F8F560 99.99%);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.bordergradient:hover{
+ background: linear-gradient(90deg, #F8F560 0%, #00FFA7 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transition-duration: .3s;
+transition-timing-function: linear;
+}
+
+.slide {
+    animation: slideInLeft 1s ease-in-out 0s;
+}
+
+.cadre{
+  top: 8px;
+  right: 150px;
+}
+.filterimg{
+    filter: opacity(1);
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+.titleSm{
+    background: linear-gradient(90deg, #F8F560 0%, #00FFA7 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+}
+
+
+
