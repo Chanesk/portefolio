@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar(){
     const pathname = usePathname()
     return(
-        <nav className="w-1/6 mt-20 ">
+        <nav className="w-1/6 mt-20 hidden md:block">
             <h2 className={`text-xl  ${ubuntu.className}`}>Projects</h2>
             <div className="ml-4">
                 <Image src="/top.png" alt="" width={56} height={56} className="relative right-4 top-4"/>

@@ -1,11 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ubuntu } from "../components/fonts";
 import style from "@/app/styles/page.module.css"
 export default function Maza(){
     return(
-        <section className={`flex lg:h-48 h-50 gap-4 ${style.slide}` }>
-            <Image src="/line.png" alt="" width={4} height={8}/>
+        <section className={` ${style.slide}` }>
             <div>
                 <h1 className={`text-2xl mb-2 ${ubuntu.className}`}>Maza.</h1>
                 <p className="pb-2">{"I have developed the website mockup for MAZA, which showcases the company and its activities. I made sure that the interface is both beautiful and intuitive. I used Figma as the tool to create this mockup."}</p>

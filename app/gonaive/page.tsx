@@ -5,8 +5,7 @@ import style from "@/app/styles/page.module.css"
 
 export default function Gonaive(){
     return(
-        <section className={`flex lg:h-48 h-50 gap-4 ${style.slide}`}>
-            <Image src="/line.png" alt="" width={4} height={8}/>
+        <section className={`${style.slide}`}>
             <div>
                 <h1 className={`text-2xl mb-4 ${ubuntu.className}`}>La Gonaïve.</h1>
                 <p className="pb-2">{"I developed the Gonaïve showcase site, a platform that highlights the company's activities. The stack is Strapi API and NextJS. The reporisitory for this one is private for at the moment."}</p>

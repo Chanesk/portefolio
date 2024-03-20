@@ -20,7 +20,15 @@ const nextConfig = {
             },
             {
                 protocol:'https',
-                hostname:'https://www.lagonaive.com'
+                hostname:'lagonaive.com'
+            },
+            {
+                protocol:'https',
+                hostname:'linkedin.com'
+            },
+            {
+                protocol:'https',
+                hostname:'twitter.com'
             }
         ]
     }

@@ -4,8 +4,7 @@ import { ubuntu } from "../components/fonts";
 import style from '@/app/styles/page.module.css'
 export default function Socodis(){
     return(
-        <section className={`flex h-49 gap-4 ${style.slide}`}>
-            <Image src="/line.png" alt="" width={4} height={8}/>
+        <section className={` ${style.slide}`}>
             <div>
                 <h1 className={`text-2xl mb-2 ${ubuntu.className}`}>Socodis-Equipment.</h1>
                 <p  className="pb-2">{"I developed the Socodis Equipment showcase site, a platform that highlights the company's activities. The stack is NextTS. The reporisitory for this one is private for at the moment."}</p>

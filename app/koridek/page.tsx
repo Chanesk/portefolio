@@ -5,8 +5,7 @@ import style from "@/app/styles/page.module.css"
 
 export default function Koridek(){
     return(
-        <section className={`flex lg:h-48 gap-4 h-50 ${style.slide}`}>
-           <Image src="/line.png" alt="" width={8} height={8}/> 
+        <section className={`${style.slide}`}>
            <div>
             <h1 className={`text-2xl mb-2 ${ubuntu.className}`}>Koridek.</h1>
             <p className="pb-2">I have developed the website mockup for KORIDEK, which showcases the company and its activities. I made sure that the interface is both beautiful and intuitive. I used Figma as the tool to create this mockup.</p>

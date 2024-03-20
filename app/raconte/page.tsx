@@ -1,13 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ubuntu } from "../components/fonts";
 import style from "@/app/styles/page.module.css"
 
 export default function Ranconte(){
     return(
-        <section className={`flex h-46 gap-4 ${style.slide}`}>
-            <Image src="/line.png" alt="" width={4} height={8}/>
-            <div >
+        <section className={`${style.slide}`}>
+            <div>
                 <h1 className={`text-2xl mb-2 ${ubuntu.className}`}>Raconte.</h1>
                 <p>{"I have developed a website called Raconte, which is a blog platform that allows users to read stories. I started by creating a mockup using Figma to ensure a visually appealing design. The stack is expressJS API, MongoDB and Angular."}</p>
                 <div className="flex gap-8 font-bold mt-4">
